@@ -12,7 +12,27 @@ $(".btn").on("click", function(){
     localStorage.setItem(blockOfTime, getEvent);
 })
 //update your hours, write a function and then call that function, need to use moment for whatevery hour it currently is
+
 //use an if statement to check what hour it is, add or remove classes to change color of text areas
+
+var currentTime = moment().hour();
+console.log(currentTime)
+var hour = i + 9;
+
+function updateHourColor(){
+//if the current time on the clock matches the column id, then change that color to red bc it is the current time
+
+if (hour = currentTime){
+    $(this).addClass(".present");
+} else if (hour < currentTime){
+    $(this).addClass(".past");
+} else {
+    $(this).addClass(".future");
+}
+
+}
+
+updateHourColor();
 
 
 //gets whats in local storage and adds it to the page
