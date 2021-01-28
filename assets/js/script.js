@@ -15,37 +15,37 @@ $(".btn").on("click", function(){
 
 //use an if statement to check what hour it is, add or remove classes to change color of text areas
 
-var currentTime = moment().hour();
-console.log(currentTime)
-var hour = i + 9;
+// var currentTime = moment().hour();
+// console.log(currentTime)
+// var hour = i + 9;
 
-function updateHourColor(){
-//if the current time on the clock matches the column id, then change that color to red bc it is the current time
+// function updateHourColor(){
+// //if the current time on the clock matches the column id, then change that color to red bc it is the current time
 
-if (hour = currentTime){
-    $(this).addClass(".present");
-} else if (hour < currentTime){
-    $(this).addClass(".past");
-} else {
-    $(this).addClass(".future");
-}
+// if (hour = currentTime){
+//     $(this).addClass(".present");
+// } else if (hour < currentTime){
+//     $(this).addClass(".past");
+// } else {
+//     $(this).addClass(".future");
+// }
 
-}
+// }
 
-updateHourColor();
+// updateHourColor();
 
 
 //gets whats in local storage and adds it to the page
 
-$("#nine .addEvent").val(localStorage.getItem("nine"));
-$("#ten .addEvent").val(localStorage.getItem("ten"));
-$("#eleven .addEvent").val(localStorage.getItem("eleven"));
-$("#twelve .addEvent").val(localStorage.getItem("twelve"));
-$("#one .addEvent").val(localStorage.getItem("one"));
-$("#two .addEvent").val(localStorage.getItem("two"));
-$("#three .addEvent").val(localStorage.getItem("three"));
-$("#four .addEvent").val(localStorage.getItem("four"));
-$("#five .addEvent").val(localStorage.getItem("five"));
+$("#9 .addEvent").val(localStorage.getItem("9"));
+$("#10 .addEvent").val(localStorage.getItem("10"));
+$("#11 .addEvent").val(localStorage.getItem("11"));
+$("#12 .addEvent").val(localStorage.getItem("12"));
+$("#13 .addEvent").val(localStorage.getItem("13"));
+$("#14 .addEvent").val(localStorage.getItem("14"));
+$("#15 .addEvent").val(localStorage.getItem("15"));
+$("#16 .addEvent").val(localStorage.getItem("16"));
+$("#17 .addEvent").val(localStorage.getItem("17"));
 
 
 });
