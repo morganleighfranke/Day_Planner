@@ -17,7 +17,7 @@ $(".btn").on("click", function(){
 
 var currentTime = moment().hour();
 console.log(currentTime)
-// var hour = i + 9;
+
 
 // function updateHourColor(){
 // //if the current time on the clock matches the column id, then change that color to red bc it is the current time
@@ -48,17 +48,18 @@ console.log(currentTime)
 
 // var timeBlock = [9, 10, 11, 12, 13, 14, 15, 16, 17]
 
-// //if (currentTime === timeBlock) {
+// if (currentTime === hour) {
+//     var hour = i + 9;
 //     for (var i =0; i <timeBlock.length; i++) {
-//         if (currentTime === timeBlock[i]) {
+//         if (currentTime === hour) {
 //             $(this).addClass("present");
-//         } else if (currentTime > timeBlock[i]) {
+//         } else if (currentTime > hour) {
 //             $(this).addClass("past");
 //         } else {
 //             $(this).addClass("future");
 //         }
 //     }
-//}
+// }
 
 if (currentTime === 9) {
     $("#9").addClass("present");
@@ -118,7 +119,7 @@ if (currentTime === 15) {
 
 if (currentTime === 16) {
     $("#16").addClass("present");
-} else if (currentTime < 16) {
+} else if (currentTime > 16) {
     $("#16").addClass("past");
 } else {
     $("#16").addClass("future");
