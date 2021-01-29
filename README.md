@@ -4,7 +4,7 @@ The hours of the workday are shown, with each hour having an area to type in and
 
 # Screenshot
 It is currently 9 am, so 9 am is red, while the future hours are green. The local storage saves the events for each hour even when screen is refreshed.
-![Alt text](assets/images/schedule.png?raw=true "Day Planner screenshot")
+![Alt text](assets/images/schedule1.png?raw=true "Day Planner screenshot")
 
 
 
