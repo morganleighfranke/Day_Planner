@@ -11,56 +11,12 @@ $(".btn").on("click", function(){
     var getEvent = $(this).siblings(".addEvent").val();
     localStorage.setItem(blockOfTime, getEvent);
 })
-//update your hours, write a function and then call that function, need to use moment for whatevery hour it currently is
 
-//use an if statement to check what hour it is, add or remove classes to change color of text areas
 
 var currentTime = moment().hour();
 console.log(currentTime)
 
-
-// function updateHourColor(){
-// //if the current time on the clock matches the column id, then change that color to red bc it is the current time
-
-// // get current number of hours
-// currentTime;
-// // loop over time blocks
-// for (var i = 0; i < timeblocks.length; i++) {
-// // check if we've moved past this time
-
-// $("").each(function(){
-
-    
-//     if (hour = currentTime){
-//         $(this).addClass(".present");
-//     } else if (hour < currentTime){
-//         $(this).addClass(".past");
-//     } else {
-//         $(this).addClass(".future");
-//     }})
-
-// }
-
-// updateHourColor();
-
-//maybe create a varibale with an array of 9-16 to represent time on calendar
-//possible if code: write if for each time. if hour = 9, then .addClass to div.
-
-// var timeBlock = [9, 10, 11, 12, 13, 14, 15, 16, 17]
-
-// if (currentTime === hour) {
-//     var hour = i + 9;
-//     for (var i =0; i <timeBlock.length; i++) {
-//         if (currentTime === hour) {
-//             $(this).addClass("present");
-//         } else if (currentTime > hour) {
-//             $(this).addClass("past");
-//         } else {
-//             $(this).addClass("future");
-//         }
-//     }
-// }
-
+//checks what time it is, then changes the color of that row to match css class
 if (currentTime === 9) {
     $("#9").addClass("present");
 } else if (currentTime > 9) {
